@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#answerOptions {
+    margin-top: 1rem;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.answer-option:hover {
+    background-color: #e0e0e0;
+}
+
+.answer-option.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.answer-letter {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+}
+
+.answer-text {
+    flex: 1;
+    color: black;
+}
+
+.answer-option.selected .answer-text {
+    color: white;
+}
+
+.answer-letter.correct {
+    background-color: #4CAF50;
+}
+
+.answer-letter.incorrect {
+    background-color: #f44336;
+}
+
+.category {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.result-item {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.result-question {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.result-answer, .result-correct {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result-status {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.result-status.correct {
+    color: #4CAF50;
+}
+
+.result-status.incorrect {
+    color: #f44336;
+}
+
+.skipped {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.answer-letter.correct {
+    background-color: #4CAF50;
+}
+
+.answer-letter.incorrect {
+    background-color: #f44336;
+}
+
+.category {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+.result-item {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.result-question {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.result-answer, .result-correct {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result-status {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.result-status.correct {
+    color: #4CAF50;
+}
+
+.result-status.incorrect {
+    color: #f44336;
+}
+
+.skipped {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.answer-letter.correct {
+    background-color: #4CAF50;
+}
+
+.answer-letter.incorrect {
+    background-color: #f44336;
+}
+
+.category {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#questionStatus {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.unanswered-indicator {
+    color: #ff9800;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#results h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.question-result {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.question-result p {
+    margin: 5px 0;
+}
+
+.correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #f44336;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Τεστ για τον Σταυρο</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Τεστ για τον Σταυρο</h1>
+        <button id="newQuizBtn">Τεστ 30 ερωτήσεων</button>
+        <button id="allQuestionsBtn">Τεστ 190 ερωτησεων</button>
+        <div id="quizContainer" style="display: none;">
+            <div id="timer">Time: 00:00</div>
+            <div id="categoryText" class="category"></div>
+            <h2 id="questionText"></h2>
+            <div id="answerOptions"></div>
+            <div class="navigation">
+                <button id="prevBtn">Προηγούμενη</button>
+                <div id="questionStatus"></div>
+                <button id="nextBtn">Επόμενη</button>
+            </div>
+            <button id="submitBtn" style="display: none;">Υποβολή Quiz</button>
+        </div>
+        <div id="results" style="display: none;"></div>
+    </div>
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>
