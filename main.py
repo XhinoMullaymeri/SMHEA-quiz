@@ -23,8 +23,8 @@ async def get_quiz(all: bool = False):
     if all:
         quiz_questions = all_questions
     else:
-        # Randomly select 30 questions or all questions if less than 30
-        quiz_questions = random.sample(all_questions, min(30, len(all_questions)))
+        # Randomly select 40 questions or all questions if less than 40
+        quiz_questions = random.sample(all_questions, min(40, len(all_questions)))
     return quiz_questions
 
 if __name__ == "__main__":
