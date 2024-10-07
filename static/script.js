@@ -111,7 +111,7 @@ function updateQuestionStatus() {
     
     let statusHTML = status;
     if (unansweredCount > 0) {
-        statusHTML += `<span class="unanswered-indicator">(${unansweredCount} Αναπάντητες.)</span>`;
+        statusHTML += `<span class="unanswered-indicator">(${unansweredCount} Αναπάντητες)</span>`;
     }
     
     document.getElementById('questionStatus').innerHTML = statusHTML;
