@@ -30,7 +30,7 @@ function startNewQuiz(allQuestions) {
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('Failed to load quiz: ' + error.message);
+            alert('Αποτυχία δημιοργίας Τεστ: ' + error.message);
         });
 }
 
