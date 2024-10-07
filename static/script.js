@@ -111,7 +111,7 @@ function updateQuestionStatus() {
     
     let statusHTML = status;
     if (unansweredCount > 0) {
-        statusHTML += `<span class="unanswered-indicator">(${unansweredCount} unanswered)</span>`;
+        statusHTML += `<span class="unanswered-indicator">(${unansweredCount} Αναπάντητες.)</span>`;
     }
     
     document.getElementById('questionStatus').innerHTML = statusHTML;
@@ -153,9 +153,9 @@ function showResults() {
 
     // Display the score and time first
     resultsDiv.innerHTML = `
-        <h2>Quiz Results</h2>
-        <h3>Your score: ${score} out of ${currentQuiz.length}</h3>
-        <h3>Total Time: ${minutes} minutes and ${seconds} seconds</h3>
+        <h2>Αποτελέσματα Τεστ</h2>
+        <h3>Σωστές Απαντήσεις: ${score} από τις ${currentQuiz.length}</h3>
+        <h3>Συνολικός χρόνος: ${minutes} λεπτά και ${seconds} δευτερόλεπτα</h3>
     `;
 
     // Then display individual question results
@@ -164,11 +164,11 @@ function showResults() {
         const isCorrect = userAnswer === question.correct_answer;
         resultsDiv.innerHTML += `
             <div class="question-result">
-                <p><strong>Category:</strong> ${question.category}</p>
-                <p><strong>Question ${index + 1}:</strong> ${question.question}</p>
-                <p>Your answer: ${userAnswer !== null ? question.options[userAnswer] : 'Skipped'}</p>
-                <p>Correct answer: ${question.options[question.correct_answer]}</p>
-                <p class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct' : 'Incorrect'}</p>
+                <p><strong>Κατηγορία:</strong> ${question.category}</p>
+                <p><strong>Ερώτηση ${index + 1}:</strong> ${question.question}</p>
+                <p>Η απάντηση σου: ${userAnswer !== null ? question.options[userAnswer] : 'Δεν απαντήθηκε'}</p>
+                <p>Σωστή Απάντηση: ${question.options[question.correct_answer]}</p>
+                <p class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Σωστή' : 'Λανθασμένη'}</p>
             </div>
         `;
     });
